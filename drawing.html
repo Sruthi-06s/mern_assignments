@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Drawing</title>
+<style>
+    body {
+        margin: 0;
+        background: skyblue;
+        overflow: hidden;
+    }
+
+    .sun {
+        position: absolute;
+        top: 60px;
+        left:330px;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        border-radius: 50%;
+        box-shadow: 0 0 50px yellow;
+    }
+
+    .grass {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(#228B22, #006400);
+    }
+
+        .mountain {
+        position: absolute;
+        bottom: 150px;
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 300px solid #556B2F;
+    }
+  
+    .mountain.left {
+        left: 250px; 
+    }
+    .mountain.right {
+        right: 450px; 
+    }
+
+    .house {
+        position: absolute;
+        bottom: 150px;
+        width: 100px;
+        height: 100px;
+        background: #FFCE1B;
+    }
+    .house .roof {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #A0522D;
+    }
+  
+    .house.left {
+        left: 1200px;
+    }
+    .house.right {
+        right: 100px;
+    }
+.pond {
+    position: absolute;
+    bottom: 20px; 
+    left: 100px; 
+    width: 300px;      
+    height: 100px;     
+    background: skyblue;
+    border-radius: 90%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sun"></div>
+<div class="rainbow"></div>
+
+<div class="mountain left"></div>
+<div class="mountain right"></div>
+
+<div class="house left">
+    <div class="roof"></div>
+</div>
+<div class="house right">
+    <div class="roof"></div>
+</div>
+
+<div class="grass"></div>
+  <div class="pond"></div>
+
+</body>
+</html>
